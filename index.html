@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #0e0e1a;
+            color: #ffffff;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #191933;
+            background-image: url("images/headerbg.jpg");
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .photo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .me{
+            border-radius: 50%;
+            width: 100px;
+            border-radius: 50%;
+            height: 100px;
+            background: url("images/profile.jpg") repeat no-repeat;
+            background-size: cover;
+            transition: transform 0.3s ease, background-size 0.3s ease;
+        }
+
+        .me:hover{
+            display: flex;
+            justify-content: center;
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            transform: scale(1.15);
+        }
+
+        .phone_call{
+            display: flex;
+            width: 25px;
+            height: 25px;
+            flex-direction: row;
+            margin-top: -2.5px;
+            margin-right: 1.75px;
+        }
+
+        .instap {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            flex-direction: row;
+            margin-top: 12px;
+            margin-right: 1.75px;
+        }
+
+        .gitp {
+            display: flex;
+            width: 25px;
+            height: 25px;
+            flex-direction: row;
+            margin-top: 12px;
+            margin-right: 1.75px;
+        }
+
+        .githubsec{
+            margin-bottom: 1.5em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .name_center{
+            margin:0;
+            font-style: italic;
+            font-size: larger;
+            text-align: center;
+            display: inline-block;
+            margin-right: 6em;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            color: #ffffff;
+            text-decoration: underline;
+            padding: 10px;
+        }
+
+        ul,
+        li:hover {
+            opacity: 0.7;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: underline;
+            padding: 10px;
+            margin-right: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            opacity: 0.7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #1e1e3c;
+            border-radius: 5px;
+            transition: transform 0.3s ease, background-size 0.3s ease;
+        }
+
+        section:hover {
+            transform: scale(1.02);
+        }
+
+        #about {
+            background-image: url("images/aboutbg.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: transform 0.3s ease, background-size 0.3s ease;
+            transition: background-image 0.5s ease;
+        }
+
+        #about:hover {
+            background-image: url("images/aboutbggif.gif");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        #showcase {
+            background-image: url("images/showcase.png");
+            background-position: bottom;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        #showcase:hover {
+            background-image: url("images/showcasegif.gif");
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            nav {
+                margin-top: 20px;
+            }
+
+            nav a {
+                display: block;
+                margin-bottom: 10px;
+            }
+        }
+
+
+        .icon{
+            align-items: center;
+        
+        }
+        .sm-icon {
+            display: flex;
+            padding: 0 1rem;
+            margin: 0;
+            color: white;
+            margin-top: 10px;
+            align-items: right;
+            flex-direction: row;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        footer {
+            background-color: #191933;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="photo">
+            <a href="Documents/cv_michael.pdf" download="Documents/cv_michael"><img src="images/me.png" alt="My Photo"
+             width="100px" height="100px" class="me"></a>
+            <p><b>Click me for downloading my CV!</b></p>
+        </div>
+
+        <div class="name_center">
+            <h1>Michael's Portfolio</h1>
+            <p>Welcome in my Portfolio! Here you can find some informations about me!</p>
+        </div>
+
+        <nav>
+            <div class="icon">
+                <a href="https://www.instagram.com/mikee_142?igsh=MXI5Mm05bXh3bmY2NQ==" target="_blank" class="sm-icon">
+                    <img src="images/instagram.png" class="instap">
+                        <p>@mikee_142</p>
+                </a>
+
+                <div class="githubsec">
+                <a href="https://github.com/z124070michael" target="_blank" class="sm-icon">
+                    <img src="images/github.png" class="gitp">
+                        <p>z124070michael</p>
+                </a>
+            </div>
+
+                <a href="https://api.whatsapp.com/send?phone=393661414909" target="_blank" class="sm-icon">
+                    <img src="images/phone-call.png" class="phone_call">
+                    +39 3661414909
+                </a>
+
+
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <a href="about.html">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Here you can find the information about me</p>
+            </section>
+        </a>
+
+        <section id="experiences">
+            <h2>Experiences</h2>
+            <p>Here you can find the information about my school and work experiences</p>
+        </section>
+
+        <section id="showcase">
+            <h2>Showcase</h2>
+            <p>Here you can find my projects and more stuff about me</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>&copy; Michael Scarcella</p>
+    </footer>
+
+</body>
+
+</html>
