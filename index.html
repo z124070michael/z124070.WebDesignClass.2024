@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
+
+        
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -94,6 +97,7 @@
             text-align: center;
             display: inline-block;
             margin-right: 6em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
         }
 
         ul,
@@ -159,23 +163,23 @@
             position: relative;
         }
 
-        #showcase {
-            background-image: url("images/showcase.png");
+        #experiences {
+            background-image: url("images/experiences.png");
             background-position: bottom;
             background-size: cover;
             background-repeat: no-repeat;
 
         }
 
-        #showcase:hover {
-            background-image: url("images/showcasegif.gif");
+        #experiences:hover {
+            background-image: url("images/experiences_gif.gif");
             background-size: cover;
             background-position: bottom;
             background-repeat: no-repeat;
             position: relative;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1000px) {
             header {
                 flex-direction: column;
                 align-items: flex-start;
@@ -268,15 +272,17 @@
         
         <a href="experiences.html">
         <section id="experiences">
-            <h2>Experiences</h2>
-            <p>Here you can find the information about my school and work experiences</p>
+            <h2>Experiences and Projects</h2>
+            <p>Here you can find all my projects</p>
         </section>
         </a>
 
+        <a href="showcase.html">
         <section id="showcase">
             <h2>Showcase</h2>
             <p>Here you can find my projects and more stuff about me</p>
         </section>
+        </a>
 
     </div>
 
